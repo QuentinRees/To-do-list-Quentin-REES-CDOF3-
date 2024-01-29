@@ -32,7 +32,3 @@ Contributions are welcome! Please follow these guidelines:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
-
-Make sure to replace placeholders like `your-username` with your actual GitHub username or project details. Feel free to customize the README to better suit your project's specific details and needs.
