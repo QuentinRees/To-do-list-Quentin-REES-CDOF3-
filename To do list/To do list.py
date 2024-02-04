@@ -76,7 +76,7 @@ def main():
         elif choice == '4':
             task_index = int(input("Enter the task index to mark as complete: "))
             todo_list.complete_task(task_index)
-        elif choice == '6':
+        elif choice == '5':
             todo_list.save_to_file()
             break
         else:
