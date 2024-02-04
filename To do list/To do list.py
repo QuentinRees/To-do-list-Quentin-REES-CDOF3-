@@ -65,22 +65,29 @@ def main():
 
         choice = input("Enter your choice (1-5): ")
 
-        if choice == '1':
+       if choice == '1':
             todo_list.display_tasks()
         elif choice == '2':
             task = input("Enter the task: ")
             todo_list.add_task(task)
         elif choice == '3':
-            task_index = int(input("Enter the task index to delete: "))
-            todo_list.delete_task(task_index)
+            task_index = input("Enter the task index to delete: ")
+            if task_index.isdigit():
+                todo_list.delete_task(int(task_index))
+            else:
+                print("Invalid task index. Please enter a number.")
         elif choice == '4':
             task_index = int(input("Enter the task index to mark as complete: "))
             todo_list.complete_task(task_index)
+            else:
+                print("Invalid task index. Please enter a number.")
         elif choice == '5':
             todo_list.save_to_file()
             break
+        elif choice == '6':
+            break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
-
+            print("Invalid choice. Please enter a number between 1 and 6.")
+            
 if __name__ == "__main__":
     main()
