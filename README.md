@@ -29,6 +29,10 @@ Contributions are welcome! Please follow these guidelines:
 3. Make your changes and commit them.
 4. Submit a pull request.
 
+## Python Libraries
+
+1. Documentation [pickle](https://docs.python.org/fr/3/library/pickle.html) 
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
