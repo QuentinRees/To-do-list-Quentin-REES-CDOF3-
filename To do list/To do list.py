@@ -77,9 +77,8 @@ def main():
             else:
                 print("Invalid task index. Please enter a number.")
         elif choice == '4':
-            task_index = input("Enter the task index to mark as complete: ")
-            if task_index.isdigit():
-                todo_list.complete_task(int(task_index))
+            task_index = int(input("Enter the task index to mark as complete: "))
+            todo_list.complete_task(task_index)
             else:
                 print("Invalid task index. Please enter a number.")
         elif choice == '5':
